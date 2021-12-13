@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FitLine | Diets</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="css/reset.css"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+      type="text/css"
+      media="screen"
+    />
+    <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen" />
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/html5.js"></script>
+      <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
+    <![endif]-->
+  </head>
+  <body id="page3">
+    <div class="bg">
+      <!--==============================header=================================-->
+      <header>
+        <div class="menu-row">
+          <div class="main">
+            <nav>
+              <ul class="menu wrapper">
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a class="active" href="diets.html">Best Diets</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="main">
+          <div class="wrapper p3">
+            <h1><a href="index.html">FitLine</a></h1>
+            <form
+              id="search-form"
+              action="#"
+              method="post"
+              enctype="multipart/form-data"
+            >
+              <fieldset>
+                <div class="search-field">
+                  <input
+                    name="search"
+                    type="search"
+                    id="searchbox"
+                    oninput="liveSearch()"
+                  />
+                  <a class="search-button"></a>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="row-bot"></div>
+      </header>
+      <!--==============================content================================-->
+      <h1 style="font-size: 40px" class="blogs_heading">Our Blogs</h1>
+      <!-- <h1 style="font-size: 50px" class="msg">No Data Found</h1> -->
+      <main class="grid">
+        <article class="card">
+          <img src="./images/pic1.jpg" alt="Sample photo" />
+          <div class="text">
+            <h3>Weight Loss</h3>
+            <p>
+              Collaboratively administrate empowered markets via plug-and-play
+              networks. Comparative Exercise with beneifits
+            </p>
+            <button><a href="blog_2.html">Here's why</a></button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="./images/pic2.jpg" alt="Sample photo" />
+          <div class="text">
+            <h3>GM Diet Plan</h3>
+            <p>
+              Dramatically engage seamlessly visualize quality intellectual
+              capital without superior collaboration and idea-sharing.
+            </p>
+            <button><a href="blog_1.html">Here's how</button></a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="./images/pic3.jpeg" alt="Sample photo" />
+          <div class="text">
+            <h3>Muscles Exercise</h3>
+            <p>
+              Completely synergize resource taxing relationships via premier
+              niche markets. Comparative Exercise with beneifits
+            </p>
+             <button><a href="blog_3.html">Read more!</a></button>   
+         
+          </div>
+        </article>
+        <article class="card">
+          <img src="./images/pic4.jpg" alt="Sample photo" />
+          <div class="text">
+            <h3>Best Exercise</h3>
+            <p>
+              Imagine jumping into that boat, and just letting it sail wherever
+              the wind takes you. Comparative Exercise with beneifits
+            </p>
+            <button><a href="blog_4.html">Just do it..</a></button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="./images/pic5.jpg" alt="Sample photo" />
+          <div class="text">
+            <h3>Fitness Diet</h3>
+            <p>
+              Holisticly predominate extensible testing procedures for reliable
+              supply chains. Comparative Exercise with beneifits
+            </p>
+            <button><a href="blog_6.html">Read more!</button></a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="./images/pic6.jpg" alt="Sample photo" />
+          <div class="text">
+            <h3>Sanity Check</h3>
+            <p>
+              Objectively innovate empowered manufactured products whereas
+              parallel platforms. Comparative Exercise with beneifits
+            </p>
+            <button><a href="blog_5.html">Stop here</button></a>
+          </div>
+        </article>
+       
+      </main>
+    </div>
+    <!--==============================footer=================================-->
+    <footer>
+      <div class="main">
+        <div class="aligncenter">
+          <span
+            >Copyright &copy; <a href="#">FitLine</a> All Rights Reserved</span
+          >
+          Design by
+          <a target="_blank" href="#">FitLine Corp.</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function liveSearch() {
+        let cards = document.querySelectorAll(".card");
+        let search_query = document.getElementById("searchbox").value;
+
+        for (var i = 0; i < cards.length; i++) {
+          if (
+            cards[i].innerText
+              .toLowerCase()
+              .includes(search_query.toLowerCase())
+          ) {
+            cards[i].classList.remove("is-hidden");
+          } else {
+            cards[i].classList.add("is-hidden");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

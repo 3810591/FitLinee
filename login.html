@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="center">
+    <div id="bg"></div>
+
+    <form>
+      <div class="error-div">
+        <span class="error" id="error"
+          >Username or Password is Not Correct</span
+        >
+      </div>
+      <div class="form-field">
+        <input
+          type="email"
+          id="userName"
+          placeholder="Email / Username"
+          required
+        />
+      </div>
+
+      <div class="form-field">
+        <input type="password" id="password" placeholder="Password" required />
+      </div>
+
+      <div class="form-field">
+        <button class="btn" type="submit" onclick="validate(event);">
+          Log in
+        </button>
+      </div>
+    </form>
+  </body>
+  <script>
+    var error = document.getElementById("error");
+    var userName = "admin";
+    var password = "1234";
+
+    error.classList.add("is-hidden");
+    function validate(e) {
+      e.preventDefault();
+      if (
+        document.getElementById("userName").value === userName &&
+        document.getElementById("password").value === password
+      ) {
+        window.location.href = "./bmi.html";
+      } else {
+        error.classList.remove("is-hidden");
+      }
+    }
+  </script>
+</html>

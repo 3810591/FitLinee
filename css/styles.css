@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #fff;
+  color: rgb(10, 10, 10);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  font-size: 4.6rem;
+  font-weight: 600;
+  line-height: 5.6rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+  line-height: 3.6rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.btn {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  background: #f05858;
+  padding: 1.2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+img {
+  display: block;
+}
+
+/* Hero-Section */
+.hero-section {
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ),
+    url("../images/mv-right.jpg");
+  background-color: rgb(10, 10, 10);
+  height: 700px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content h1 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.hero-content h5 {
+  text-align: center;
+  color: #f05858;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding-top: 0.5rem;
+}
+
+/* Results-Section */
+.results-section {
+  background: #fafafa;
+  padding: 6.5rem;
+  text-align: center;
+}
+
+.main-section h6 {
+  color: #f05858;
+}
+
+.main-section h2 {
+  color: rgb(10, 10, 10);
+  padding: 1.5rem 0rem;
+}
+
+.main-section p {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  padding-bottom: 1.5rem;
+}
+
+.main-btn {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Programs-Section */
+.programs-section {
+  background: #fff;
+  padding: 6.5rem;
+  text-align: center;
+}
+
+.programs-section .container > img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.main-flex .main-item {
+  width: 25rem;
+  text-align: center;
+}
+
+.main-flex .main-item > img {
+  width: 10rem;
+  margin: 0 auto 1.5rem;
+}
+
+.main-flex .main-item h5 {
+  padding: 0.5rem 0;
+}
+
+/* Advance-Section */
+
+.advance-section {
+  background: #fafafa;
+  padding: 6.5rem 0rem;
+  text-align: center;
+}
+
+.advance-section .container > img {
+  width: 50%;
+  margin: 4rem auto;
+}
+
+/* ----------Nutrition Page--------- */
+.hero-nutrition-section {
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ),
+    url("../images/nutrition-hero.jpeg");
+  background-color: rgb(10, 10, 10);
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formula-section {
+  background: #fff;
+  padding: 6.5rem;
+  text-align: center;
+}
+
+.gallery-section {
+  background: #fafafa;
+  padding: 6.5rem;
+  text-align: center;
+}
+
+.gallery-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2.5rem;
+}
+
+.galler-item {
+  width: 40rem;
+  margin-bottom: 3.5rem;
+}
+
+.galler-item > img {
+  width: 40rem;
+  height: 32rem;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+
+.galler-item > img:hover {
+  transform: scale(1.08);
+}
+
+/* Food-Flex */
+
+.food-section {
+  padding: 6.5rem 0rem;
+}
+
+.food-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4.5rem;
+}
+
+.food-img {
+  width: 35rem;
+}
+
+.food-item {
+  width: 40rem;
+}
+
+.food-img > img {
+  width: 35rem;
+  height: 35rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.food-item h2 {
+  padding: 0.8rem 0rem;
+  line-height: 1.25;
+  text-transform: capitalize;
+}
+
+.order-change {
+  order: 2;
+}
+
+.center {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bg {
+  background-image: url("../images/background.jpg");
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: blur(5px);
+}
+
+form {
+  width: 350px;
+  position: relative;
+}
+form .form-field::before {
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+  top: 17px;
+  color: #888888;
+  content: " ";
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+form .form-field:nth-child(1)::before {
+  background-image: url("../images/user-icon.png");
+  width: 20px;
+  height: 20px;
+  top: 10px;
+}
+form .form-field:nth-child(2)::before {
+  background-image: url("../images/lock-icon.png");
+  width: 16px;
+  height: 16px;
+  top: 10px;
+}
+form .form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+form .form-field > input {
+  font-family: inherit;
+  width: 100%;
+  outline: none;
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  display: block;
+  padding: 0.9rem 0.7rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 17px;
+  color: #4a4a4a;
+  text-indent: 40px;
+}
+form .btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.9rem 2.5rem;
+  text-align: center;
+  background-color: #47ab11;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 17px;
+}
+.is-hidden {
+  display: none;
+}
+.error {
+  color: red;
+  background-color: white;
+  padding: 10px;
+  font-weight: 600;
+}
+.error-div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ---------Media Queries--------- */
+
+@media (max-width: 992px) {
+  .hero-section {
+    height: 500px;
+  }
+
+  h1 {
+    font-size: 3.8rem;
+    line-height: 4.6rem;
+  }
+
+  h5 {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+  }
+
+  h6 {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 976px) {
+  .gallery-flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .galler-item {
+    width: 75%;
+    margin-bottom: 3.5rem;
+  }
+
+  .galler-item > img {
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    transition: all 500ms ease;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .advance-section .container > img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 815px) {
+  .food-flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .food-img {
+    width: 100%;
+  }
+
+  .food-item {
+    width: 75%;
+    padding-top: 2.5rem;
+  }
+
+  .food-img > img {
+    width: 75%;
+    height: 75%;
+    margin: 0 auto;
+  }
+
+  .order-change {
+    order: 0;
+  }
+}
+
+@media (max-width: 678px) {
+  .main-flex {
+    justify-content: center;
+  }
+
+  .main-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .formula-section {
+    padding: 6.5rem 0rem;
+  }
+
+  .gallery-section {
+    padding: 6.5rem 0rem;
+  }
+
+  .galler-item {
+    width: 100%;
+    margin-bottom: 3.5rem;
+  }
+
+  .food-img > img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .food-item {
+    width: 100%;
+    padding-top: 2.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-section {
+    height: 450px;
+  }
+
+  .results-section,
+  .programs-section,
+  .advance-section {
+    padding: 3.5rem 0;
+  }
+
+  .programs-section .container > img {
+    width: 100%;
+  }
+
+  .advance-section .container > img {
+    width: 100%;
+  }
+}

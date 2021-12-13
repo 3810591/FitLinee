@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FitLine | Diets</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="css/reset.css"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+      type="text/css"
+      media="screen"
+    />
+    <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen" />
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/html5.js"></script>
+      <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
+    <![endif]-->
+  </head>
+  <body id="page3">
+    <div class="bg">
+      <!--==============================header=================================-->
+      <header>
+        <div class="menu-row">
+          <div class="main">
+            <nav>
+              <ul class="menu wrapper">
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a class="active" href="diets.html">Best Diets</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="main">
+          <div class="wrapper p3">
+            <h1><a href="index.html">FitLine</a></h1>
+            <form
+              id="search-form"
+              action="#"
+              method="post"
+              enctype="multipart/form-data"
+            >
+              <fieldset>
+                <div class="search-field">
+                  <input
+                    name="search"
+                    type="search"
+                    id="searchbox"
+                    oninput="liveSearch()"
+                  />
+                  <a class="search-button"></a>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="row-bot"></div>
+      </header>
+      <!--==============================content================================-->
+        <head>
+    <title>FitLine | Diets</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="css/blog.css"
+      type="text/css"
+      media="screen"
+    />
+    <div class="container mb80">
+    <div class="page-timeline">
+        <div class="vtimeline-point">
+            <div class="vtimeline-icon">
+                <i class="fa fa-image"></i>
+            </div>
+            <div class="vtimeline-block">
+                <span class="vtimeline-date"></span><div class="vtimeline-content">
+                    <img src="images/blg2.jpg" alt="" class="img-fluid mb20">
+                    <h3>Eating to lose weight?</h3>
+                    
+                    <p>
+                       Sport, combined with weight loss, requires good dietary habits, for your body to work intensely for long periods, without getting tired. Few tips to get going!
+<br><br>
+Diet is often associated with self-deprivation. Stop right there! Sport, combined with weight loss, requires good dietary habits, so that you can work your body intensely and for long periods, without getting fatigued or weak.
+                    </p><br>
+                  
+                </div>
+            </div>
+        </div>
+
+        <div class="vtimeline-point">
+            <div class="vtimeline-icon">
+                <i class="fa fa-image"></i>
+            </div>
+            <div class="vtimeline-block">
+                <span class="vtimeline-date"></span><div class="vtimeline-content">
+                     <div class="embed-responsive embed-responsive-21by9 mb20">
+                  <img src="images/blg2_1.jpg" alt="" 
+                </div>
+                    <h3>Sport Calls for a Balanced Diet</h3><br>
+                    
+                    <p>
+                "When we meet people who want to lose weight by exercising, we always talk about nutrition," explains Ludovic Doyer, fitness coach. "The two things go together. <b>You can't ask your body to do more with restricted nutrition.</b> However, you can change certain habits to burn calories without feeling the effects of fatigue."       
+
+</p>
+            
+                </div>
+            </div>
+        </div>
+        <div class="vtimeline-point">
+            
+                <i class="fa fa-image"></i>
+            </div>
+            <div class="vtimeline-block">
+               
+              <div class="vtimeline-point">
+            <div class="vtimeline-icon">
+                <i class="fa fa-image"></i>
+            </div>
+            <div class="vtimeline-block">
+                <span class="vtimeline-date"></span><div class="vtimeline-content">
+                     <div class="embed-responsive embed-responsive-21by9 mb20">
+                 <img src="images/blg2_2.jpg" alt="" class="img-fluid mb20">
+                </div>
+                    <h3>Keep a Dietary Rhythm</h3><br>
+                    
+                    <p>The key thing, according to Ludovic Doyer, is not to skip meals (as I'm sure you've been told often enough!). This view is also shared by Doctor <b>Alexandre Feltz, Head of Sports for Health in Strasbourg.</b> "You need to eat four times a day : morning, midday, 4 PM and 8 PM. This is an important foundation for giving your body a nutritional rhythm." For people wanting to lose a few kilos, the fitness coach generally recommends reducing their fat and sugar intake. He recommends eating very specific foods at different times of day.
+</p>
+       
+
+                </div>
+            </div>
+        </div>
+        <div class="vtimeline-point">
+            <div class="vtimeline-icon">
+                <i class="fa fa-image"></i>
+            </div>
+            <div class="vtimeline-block">
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+==============================footer=================================-->
+    <footer>
+      <div class="main">
+        <div class="aligncenter">
+          <span
+            >Copyright &copy; <a href="#">FitLine</a> All Rights Reserved</span
+          >
+          Design by
+          <a target="_blank" href="#">FitLine Corp.</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function liveSearch() {
+        let cards = document.querySelectorAll(".card");
+        let search_query = document.getElementById("searchbox").value;
+
+        for (var i = 0; i < cards.length; i++) {
+          if (
+            cards[i].innerText
+              .toLowerCase()
+              .includes(search_query.toLowerCase())
+          ) {
+            cards[i].classList.remove("is-hidden");
+          } else {
+            cards[i].classList.add("is-hidden");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
